@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #34495e;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+
+.lists {
+    display: flex;
+}
+
+.list {
+    flex-grow: 1;
+}
+
+.col {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.emote {
+    display: flex;
+    transition: background-color 0.5s;
+}
+
+.emote img {
+    display: block;
+}
+
+.emote .text {
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.emote:hover {
+    background-color: #2c3e50;
+}
+
+.emote.copied {
+    background-color: #27ae60;
+}
+
+.header {
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .col {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .col {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.nm {
+    margin: 0;
+}
+
+.small {
+    font-size: 0.75em;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #e74c3c;
+}

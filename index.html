@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emote List for TETR.IO</title>
+
+    <meta name="description" content="A list of all the emotes you can use in TETR.IO's game chat.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="icon.png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+
+</head>
+<body>
+<div class="content">
+    <div class="header">
+        <br>
+        <h1 class="nm">Emote List for TETR.IO</h1>
+        <p class="nm small">Get the TETR.IO Emote Picker extension for
+            <a href="https://addons.mozilla.org/en-GB/firefox/addon/emote-picker-for-tetr-io/"
+               target="_blank">Firefox</a> or
+            <a href="https://chrome.google.com/webstore/detail/emote-picker-for-tetrio/cgboinmlmgdepnaiejpadcdcoemimbnn"
+               target="_blank">Chrome</a>!
+        </p>
+        <br>
+        <p class="nm">This is a list of emotes you can use in TETR.IO game chat.</p>
+        <p class="nm small">(Click any emote to copy it)</p>
+    </div>
+
+    <br>
+
+    <div class="list">
+        <div id="emotes-base" class="col"></div>
+    </div>
+
+    <div class="list">
+        <p><strong>Supporter emotes:</strong> Only TETR.IO supporters can use these.</p>
+        <div id="emotes-supporter" class="col"></div>
+    </div>
+
+    <div class="list">
+        <p><strong>Verified emotes:</strong> Only verified users can use these.</p>
+        <div id="emotes-verified" class="col"></div>
+    </div>
+
+    <div class="list" id="emotes">
+        <p><strong>Staff emotes:</strong> Only TETR.IO staff (moderators and administrators) can use these.</p>
+        <div id="emotes-staff" class="col"></div>
+    </div>
+</div>
+
+<br>
+
+<div class="header">
+    <p class="nm small">Last updated: <span id="updated-ts"></span></p>
+</div>
+
+<textarea id="copybuffer"
+          style="opacity: 0; pointer-events: none; position: fixed; top: 0; left: 0;"
+          aria-hidden="true"
+          aria-label="Copy buffer"></textarea>
+</body>
+</html>
